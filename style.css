@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;text
+}                       
+.border{
+    background-color: red;
+    height: 3px;
+}
+.container img{
+    width: 305px;
+    height: 117px;
+}
+.navebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 29px auto;
+   margin-left: 0px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.navebar ul li{
+    margin: 0px 11px;
+    list-style: none;
+}
+.navebar li a{
+    color: rgb(236, 8, 8);
+    text-decoration: none;
+    font-size: 15px;
+}
+.active {
+    background-color: #430d8b;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.active:hover{
+    background-color: red;
+}
+.nav{
+margin-left: -9000px;
+}
+.container2 img{
+    width: 100%;
+    position: absolute;
+    top: 232px;
+    border-top: 1px #00000054;
+    border-top-style: outset;
+}
+@media (max-width:1200px) {
+    .navebar ul{
+        margin-left: -900000000px;
+    }
+    .nav{
+   margin-left: 0px;
+        list-style: none;
+        margin: -64px 51px    }
+    .nav li a{
+        color: rgb(0, 0, 0);
+      padding: 0px 10px;
+      
+        text-decoration: none;
+    }
+   
+    .nav li{
+        background-color: #dcdcdc4d;
+        border: #0000002e groove 0.1px;
+        border-color: #00000017;
+        padding: 20px 0px;
+        font-size: 15px;
+        margin-top:-9000000000px ;
+        transition: all 0.4s ease-in-out;
+    }
+    .bx-menu{
+        padding: 10px;
+        position: absolute;
+        color: #0000006b;
+        right: 53px;
+        border-left: 1px #00000054;
+        border-left-style: outset;
+        top: 146px;
+        font-size: 40px;
+    }
+    #btn{
+        display: none;
+    }
+    .nav li:hover{
+        cursor: pointer;
+        background-color: #dcdcdc83;
+        padding: 23px 5px;
+    }
+    .bx-menu:hover{
+        cursor: pointer;
+       
+    }
+.menu {
+    background-color: #dcdcdc4d;
+    border: #0000002e groove 0.1px;
+    border-color: #00000017;
+    padding: 20px 0px;
+    font-size: 15px;
+    display: block;
+    color: white;
+}
+.menu a{
+    color: rgb(0, 0, 0);
+    padding: 0px 10px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.menu:hover{
+    cursor: pointer;
+    background-color: #dcdcdc83;
+    padding: 23px 5px;
+}
+#btn:checked ~ .list li {
+    margin-top: 0px;
+    /* background-color: #430d8b; */
+}
+#btn:checked ~ .container2 img{ 
+    top: 915px;
+}
+}
